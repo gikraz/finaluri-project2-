@@ -72,6 +72,7 @@ function App() {
         <div style={{ position: 'absolute' }}>
           <h2>{data[0].word}</h2>
           <button className='playbtn' onClick={playSound}><img src={PlayBtnn} alt="Play" /></button>
+          <br />
           {data[0].meanings.map((el, i) => (
             <div key={i}>
               <h2>{el.partOfSpeech}</h2>
